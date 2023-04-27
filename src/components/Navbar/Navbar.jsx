@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import styles from './Navbar.module.css';
 import { Link } from 'react-router-dom';
 import { RxHamburgerMenu } from 'react-icons/rx';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
   const [isOpen, setisOpen] = useState(false);
@@ -43,30 +44,32 @@ const Navbar = () => {
       <button
         className={styles.hamburger}
         onClick={() => {
-          if (isOpen) {
-            openRef.current.className = styles.shown;
-          } else {
-            openRef.current.className = styles.navlist;
-          }
           setisOpen(!isOpen);
         }}
       >
         <RxHamburgerMenu />
       </button>
-      <ul ref={openRef} className={styles.navlist}>
-        {links.map((item, index) => (
-          <li className={styles.link} key={index}>
-            <span className={styles.num}>{item.num}</span>
-            <Link
-              className={styles.links}
-              to={item.link}
-              onClick={() => (openRef.current.className = styles.navlist)}
-            >
-              {item.name}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.ul
+            initial={{ y: '-100%' }}
+            animate={{ y: '0%' }}
+            exit={{ y: '-100%' }}
+            // transition={{}}
+            ref={openRef}
+            className={styles.navlist}
+          >
+            {links.map((item, index) => (
+              <li className={styles.link} key={index}>
+                <span className={styles.num}>{item.num}</span>
+                <Link className={styles.links} to={item.link} onClick={() => setisOpen(!isOpen)}>
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+          </motion.ul>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };
