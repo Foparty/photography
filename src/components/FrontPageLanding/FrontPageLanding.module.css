@@ -1,0 +1,130 @@
+.landing {
+  width: min(100% - 2rem, 92rem);
+  margin-inline: auto;
+  /* border: 1px red solid; */
+  position: relative;
+  /* z-index: 0; */
+}
+
+.avatar {
+  display: none;
+}
+
+.title {
+  color: var(--clr-primary);
+  max-width: 10ch;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.role {
+  padding-left: 2rem;
+  text-transform: uppercase;
+}
+
+.role span {
+  margin-left: 1rem;
+}
+
+.textcontainer {
+  position: absolute;
+  left: 5%;
+  bottom: 12%;
+  transition: bottom 0.2s ease-in-out;
+}
+
+@media (min-width: 47.25rem) {
+  .landing {
+    display: flex;
+    height: calc(100vh - 89.19px);
+  }
+  .landing > * {
+    flex: 1;
+  }
+  .avatar {
+    display: block;
+  }
+
+  .landingimgcontainer {
+    width: 100%;
+    height: calc(100% - 5rem);
+  }
+  .landingimgcontainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .avatarcontainer {
+    position: relative;
+  }
+  .avatar {
+    position: absolute;
+    top: calc(793.47px - 180px);
+    left: 5rem;
+  }
+  .avatar p {
+    margin-top: 0.4rem;
+  }
+  .avatar a {
+    position: absolute;
+    width: 6rem;
+    aspect-ratio: 1;
+    left: 90%;
+    top: 60%;
+    z-index: 3;
+  }
+  .textcontainer {
+    top: 5rem;
+    left: 28%;
+  }
+  .title {
+    font-size: clamp(2rem, 10vw - 1rem, 7rem);
+    font-family: var(--ff-xtralight);
+    letter-spacing: 14px;
+  }
+  .role {
+    line-height: 1;
+    padding-left: 4rem;
+    font-size: clamp(1.5rem, 4vw - 1rem, 2.4rem);
+    letter-spacing: 4px;
+  }
+  .role span {
+    margin-left: 2rem;
+  }
+  .arrow {
+    left: 60%;
+    width: 3rem;
+    height: 4rem;
+    /* border: 1px solid red; */
+    position: relative;
+  }
+  .arrow::after {
+    content: 'Scroll Down & Explore';
+    position: absolute;
+    left: 2.2rem;
+    top: 1rem;
+    width: 5rem;
+    font-size: 0.8rem;
+  }
+  .line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4rem;
+    width: 1.4px;
+    background: var(--clr-primary);
+  }
+  .arrowdown {
+    border: solid var(--clr-primary);
+    height: 0.6rem;
+    width: 0.6rem;
+    border-width: 0 1.4px 1.4px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 0;
+    left: 1.204rem;
+  }
+}

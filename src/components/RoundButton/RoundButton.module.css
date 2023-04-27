@@ -1,0 +1,35 @@
+.button {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  border: none;
+  padding: 1rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button p {
+  /* max-width: 9ch; */
+}
+
+.button:hover {
+  cursor: pointer;
+}
+.button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 120%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  background-color: transparent;
+  border: 1px solid var(--clr-primary);
+}

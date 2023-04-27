@@ -1,0 +1,22 @@
+.title {
+  text-transform: uppercase;
+  max-width: 14ch;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+.titlespan {
+  text-transform: capitalize;
+  color: var(--clr-primary);
+}
+
+.img {
+  margin: 0.5rem 0;
+  width: 100%;
+  height: auto;
+}
+.location {
+  line-height: 1;
+}
+.date {
+  line-height: 1;
+}

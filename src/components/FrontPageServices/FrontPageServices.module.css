@@ -1,0 +1,50 @@
+.services {
+  margin: 2rem 0;
+  width: min(100% - 2rem, 92rem);
+  margin-inline: auto;
+}
+
+.servicescontainer > div:not(:last-child) {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  text-transform: capitalize;
+  position: relative;
+  margin-left: 1rem;
+  font-family: var(--ff-xtralight);
+}
+.title::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -1rem;
+  width: 0.5rem;
+  height: 1px;
+  background-color: var(--clr-dark);
+}
+
+@media (min-width: 47.25rem) {
+  .services {
+    width: 80%;
+    margin-inline: auto;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+  }
+
+  .title {
+    top: 1.3rem;
+  }
+
+  .title::before {
+    content: '';
+    position: absolute;
+    top: 0.7rem;
+    left: -1rem;
+    width: 0.5rem;
+    height: 1px;
+    background-color: var(--clr-dark);
+  }
+}

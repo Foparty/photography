@@ -1,0 +1,15 @@
+export { default as landinglarge } from './landinglarge.png';
+export { default as landingavatar } from './landingavatar.png';
+export { default as work1 } from './work1.png';
+export { default as work2 } from './work2.png';
+export { default as work3 } from './work3.png';
+export { default as work4 } from './work4.png';
+export { default as work5 } from './work5.png';
+export { default as work6 } from './work6.png';
+export { default as work7 } from './work7.png';
+export { default as ex1 } from './ex1.png';
+export { default as ex2 } from './ex2.png';
+export { default as ex3 } from './ex3.png';
+export { default as testimonial1 } from './testimonial1.png';
+export { default as testimonial2 } from './testimonial2.png';
+export { default as testimonial3 } from './testimonial3.png';

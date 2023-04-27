@@ -1,0 +1,82 @@
+.projects {
+  padding: 1rem 0;
+  width: min(100% - 2rem, 92rem);
+  margin-inline: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.textcontainer {
+  line-height: 1.2;
+}
+.title {
+  color: var(--clr-primary);
+  font-size: clamp(3rem, 10vw - 1rem, 7rem);
+}
+
+.sub {
+  max-width: 28ch;
+}
+
+.buttoncontainer {
+  transform: translate(-1rem, 0rem);
+}
+
+.content > * {
+  margin: 2rem 0;
+}
+
+@media (min-width: 47.25rem) {
+  .buttoncontainer {
+    transform: translate(2rem, -1rem);
+  }
+  .content {
+    display: grid;
+    /* grid-template-areas: ''; */
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: repeat(6, 1fr);
+    grid-auto-flow: dense;
+    grid-template-areas:
+      'one two'
+      'one four'
+      'three five'
+      '. five'
+      'six seven'
+      'six .';
+  }
+  .content div:nth-child(1) {
+    grid-area: one;
+    align-self: center;
+  }
+  .content div:nth-child(2) {
+    grid-area: two;
+    max-width: 50%;
+    justify-self: center;
+    justify-self: center;
+  }
+  .content div:nth-child(3) {
+    grid-area: three;
+    max-width: 40%;
+    justify-self: center;
+  }
+  .content div:nth-child(4) {
+    grid-area: four;
+    max-width: 50%;
+    justify-self: center;
+  }
+  .content div:nth-child(5) {
+    grid-area: five;
+  }
+  .content div:nth-child(6) {
+    grid-area: six;
+  }
+  .content div:nth-child(7) {
+    grid-area: seven;
+    max-width: 40%;
+    justify-self: center;
+  }
+}

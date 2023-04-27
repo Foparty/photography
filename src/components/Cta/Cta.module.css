@@ -1,0 +1,24 @@
+.cta {
+  padding: 4rem 0;
+  width: min(100% - 2rem, 92rem);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.button {
+  justify-self: end;
+  margin-right: 3rem;
+}
+
+.text {
+  font-size: clamp(1rem, 8vw - 1rem, 2.3rem);
+  line-height: 1;
+}
+.text h2 {
+  text-transform: uppercase;
+}
+.text p {
+  color: var(--clr-primary);
+}
