@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Loading from '../../components/Loading/Loading';
 import MainPage from '../MainPage/MainPage';
-const Landing = () => {
+const Landing = ({ data }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -11,7 +11,7 @@ const Landing = () => {
     }, 3000);
   }, []);
 
-  return <>{loading ? <Loading /> : <MainPage />}</>;
+  return <>{loading ? <Loading /> : <MainPage data={data} />}</>;
 };
 
 export default Landing;

@@ -1,12 +1,11 @@
 import React from 'react';
 import styles from './Projects.module.css';
 import RoundButton from '../../components/RoundButton/RoundButton';
-import { works } from '../../../public/data/work';
 import WorkPageComponent from '../../components/WorkPageComponent/WorkPageComponent';
 import Cta from '../../components/Cta/Cta';
 import Footer from '../../components/Footer/Footer';
 
-const Projects = () => {
+const Projects = ({ data }) => {
   return (
     <main className={styles.projects}>
       <section className={styles.header}>
@@ -23,7 +22,7 @@ const Projects = () => {
         </div>
       </section>
       <div className={styles.content}>
-        {works.map((item, index) => (
+        {data.map((item, index) => (
           <WorkPageComponent
             key={index}
             title={item.title}
@@ -31,6 +30,7 @@ const Projects = () => {
             img={item.img}
             location={item.location}
             date={item.date}
+            slug={item.slug}
           />
         ))}
       </div>

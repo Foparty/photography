@@ -7,12 +7,12 @@ import FrontPageTestimonials from '../../components/FrontPageTestimonials/FrontP
 import Cta from '../../components/Cta/Cta';
 import Footer from '../../components/Footer/Footer';
 
-const MainPage = () => {
+const MainPage = ({ data }) => {
   return (
     <>
       <FrontPageLanding />
       <FrontPageServices />
-      <FronPageWork />
+      <FronPageWork data={data} />
       <FrontPageExhibitions />
       <FrontPageTestimonials />
       <Cta />

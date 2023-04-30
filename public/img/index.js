@@ -13,3 +13,8 @@ export { default as ex3 } from './ex3.png';
 export { default as testimonial1 } from './testimonial1.png';
 export { default as testimonial2 } from './testimonial2.png';
 export { default as testimonial3 } from './testimonial3.png';
+export { default as workphotos1 } from './workphotos1.png';
+export { default as workphotos2 } from './workphotos2.png';
+export { default as workphotos3 } from './workphotos3.png';
+export { default as workphotos4 } from './workphotos4.png';
+export { default as workphotos5 } from './workphotos5.png';
