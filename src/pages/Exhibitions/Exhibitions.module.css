@@ -1,0 +1,37 @@
+.exhibitions {
+  padding: 1rem 0;
+  width: 100%;
+  margin-inline: auto;
+}
+.title {
+  width: min(100% - 2rem, 92rem);
+  margin-inline: auto;
+  font-size: clamp(4rem, 5vw - 1rem, 9rem);
+  color: var(--clr-primary);
+  text-align: center;
+}
+
+.sectiontitle {
+  text-transform: uppercase;
+}
+
+.sectiontitle span {
+  color: var(--clr-primary);
+}
+
+.content {
+  width: min(100% - 2rem, 92rem);
+  margin-inline: auto;
+  margin-top: 3rem;
+}
+
+.content > div:not(:last-child) {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
