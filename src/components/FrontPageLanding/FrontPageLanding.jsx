@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './FrontPageLanding.module.css';
-import { landingavatar, landinglarge } from '../../../public/img';
+import { landingavatar, landinglarge } from '/public/img';
 import RoundButton from '../RoundButton/RoundButton';
 
 const FrontPageLanding = () => {

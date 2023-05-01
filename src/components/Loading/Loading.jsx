@@ -12,7 +12,7 @@ const Loading = () => {
           exit={{ opacity: 0 }}
           transition={{ duration: 1 }}
         >
-          Gabriel Asdrubal
+          Alfonso Martín
         </motion.h1>
       </section>
     </>

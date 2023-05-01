@@ -21,3 +21,4 @@ export { default as workphotos2 } from './workphotos2.png';
 export { default as workphotos3 } from './workphotos3.png';
 export { default as workphotos4 } from './workphotos4.png';
 export { default as workphotos5 } from './workphotos5.png';
+export { default as avatar1 } from './avatar1.png';
