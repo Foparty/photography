@@ -2,11 +2,11 @@ import React from 'react';
 import styles from './Cta.module.css';
 import RoundButton from '../RoundButton/RoundButton';
 
-const Cta = () => {
+const Cta = ({ link }) => {
   return (
     <section className={styles.cta}>
       <div className={styles.button}>
-        <RoundButton link={'/#'} size={'1rem'} widthb={'10rem'}>
+        <RoundButton link={link} size={'1rem'} widthb={'10rem'}>
           Get In Touch
         </RoundButton>
       </div>

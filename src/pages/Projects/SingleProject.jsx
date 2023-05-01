@@ -54,7 +54,7 @@ const SingleProject = ({ data }) => {
       }
     }
   }, []);
-  console.log(data[index]);
+  // console.log(data[index]);
   return (
     <div className={styles.singlework}>
       <Link to={'/work'} className={styles.back}>

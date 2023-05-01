@@ -23,6 +23,7 @@ const Exhibitions = ({ exhibitions }) => {
               text={item.text}
               link={item.link}
               date={item.date}
+              slug={item.slug}
             />
           ))}
         </div>
@@ -41,6 +42,7 @@ const Exhibitions = ({ exhibitions }) => {
               text={item.text}
               link={item.link}
               date={item.date}
+              slug={item.slug}
             />
           ))}
         </div>

@@ -39,7 +39,7 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <h2 className={styles.logo}>
-        <Link to={'/'}>Gabriel Asdrúbal</Link>
+        <Link to={'/'}>Alfonso Martín</Link>
       </h2>
       <button
         className={styles.hamburger}

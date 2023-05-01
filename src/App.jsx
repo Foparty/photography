@@ -10,6 +10,7 @@ import NotFound from './pages/NotFound/NotFound';
 import Contact from './pages/Contact/Contact';
 import About from './pages/About/About';
 import ScrollToTop from './utils/ScrollTop';
+import SingleExhibition from './pages/Exhibitions/SingleExhibition';
 function App() {
   return (
     <>
@@ -17,10 +18,14 @@ function App() {
         <Routes>
           <Route path={'/'} element={<Landing data={works} exhibitions={exhibitions} />} />
           <Route path={'/work'} element={<Projects data={works} />} />
+          <Route path={'/:slug'} element={<SingleProject data={works} />} />
           <Route path={'/exhibitions'} element={<Exhibitions exhibitions={exhibitions} />} />
+          <Route
+            path={'/exhibition/:slug'}
+            element={<SingleExhibition exhibitions={exhibitions} />}
+          />
           <Route path={'/contact'} element={<Contact />} />
           <Route path={'/about'} element={<About />} />
-          <Route path={'/:slug'} element={<SingleProject data={works} />} />
           <Route path={'*'} element={<NotFound />} />
         </Routes>
       </ScrollToTop>

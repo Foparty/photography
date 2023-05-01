@@ -9,13 +9,13 @@ const FrontPageLanding = () => {
       <div className={styles.avatarcontainer}>
         <div className={styles.avatar}>
           <img src={landingavatar} alt="" />
-          <p>Hi, I&apos;m Gabriel</p>
+          <p>Hi, I&apos;m Alfonso</p>
           <RoundButton link={'/contact'} size={'.9rem'} widthb={'6rem'}>
             Work With Me
           </RoundButton>
         </div>
         <div className={styles.textcontainer}>
-          <h1 className={styles.title}>Gabriel Asdrúbal</h1>
+          <h1 className={styles.title}>Alfonso Martín</h1>
           <p className={styles.role}>
             Photographer <br />
             <span>& Visual Artist</span>

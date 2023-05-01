@@ -31,6 +31,7 @@ const FrontPageExhibitions = ({ exhibitions }) => {
             text={item.text}
             link={item.link}
             date={item.date}
+            slug={item.slug}
           />
         ))}
       </div>

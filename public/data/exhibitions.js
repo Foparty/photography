@@ -8,8 +8,9 @@ export const exhibitions = [
       building: 'Town hall',
       year: 2022,
     },
-    title: 'Independent',
+    title: 'Independent ',
     span: 'beauty',
+    slug: 'independent-beauty',
     text: 'Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Atque impedit voluptate neque exercitationem corrupti odio officia accusantium veniam, iure ex.',
     link: '/#',
     date: {
@@ -24,8 +25,9 @@ export const exhibitions = [
       building: 'Kunsthalle',
       year: 2022,
     },
-    title: 'In Humanity We',
+    title: 'In Humanity We ',
     span: 'Trust',
+    slug: 'in-humanity-we-trust',
     text: 'Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Lorem ipsum dolor, sit amet, consectetur adipisicing elit.',
     link: '/#',
     date: {
@@ -40,8 +42,9 @@ export const exhibitions = [
       building: 'El Prado',
       year: 2023,
     },
-    title: 'Madrid at',
+    title: 'Madrid at ',
     span: 'Night',
+    slug: 'madrid-at-night',
     text: 'Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Atque impedit voluptate neque exercitationem corrupti odio officia accusantium veniam, iure ex.',
     link: '/#',
     date: {
@@ -56,8 +59,9 @@ export const exhibitions = [
       building: 'El Prado',
       year: 2023,
     },
-    title: 'Independent',
+    title: 'Independenti ',
     span: 'Beauty',
+    slug: 'independenti-beauty',
     text: 'Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Atque impedit voluptate neque exercitationem corrupti odio officia accusantium veniam, iure ex.',
     link: '/#',
     date: {
@@ -72,8 +76,9 @@ export const exhibitions = [
       building: 'El Prado',
       year: 2023,
     },
-    title: 'In Humanity we',
+    title: 'In Humanity we ',
     span: 'NTrustight',
+    slug: 'humanity-trust',
     text: 'Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Atque impedit voluptate neque exercitationem corrupti odio officia accusantium veniam, iure ex.',
     link: '/#',
     date: {
@@ -84,10 +89,11 @@ export const exhibitions = [
   {
     img: ex6,
     details: {
-      location: 'Madrid',
+      location: 'Berlin',
       building: 'El Prado',
       year: 2023,
     },
+    slug: 'berlin-at-night',
     title: 'Berlin at ',
     span: 'Night',
     text: 'Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Atque impedit voluptate neque exercitationem corrupti odio officia accusantium veniam, iure ex.',

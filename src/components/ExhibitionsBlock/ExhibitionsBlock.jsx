@@ -3,10 +3,12 @@ import styles from './ExhibitionsBlock.module.css';
 import { Link } from 'react-router-dom';
 import { BsArrowUpRight } from 'react-icons/bs';
 
-const ExhibitionsBlock = ({ img, details, title, span, text, link, date }) => {
+const ExhibitionsBlock = ({ img, details, title, span, text, link, date, slug }) => {
   return (
     <div className={styles.block}>
-      <img src={img} alt={title} className={styles.img} />
+      <Link to={`/exhibition/${slug}`}>
+        <img src={img} alt={title} className={styles.img} />
+      </Link>
       <div className={styles.content}>
         <p className={styles.details}>
           <span>{details.location}</span>
@@ -14,8 +16,10 @@ const ExhibitionsBlock = ({ img, details, title, span, text, link, date }) => {
           <span>{details.year}</span>
         </p>
         <h2 className={styles.title}>
-          {title}
-          <span className={styles.span}>{span}</span>
+          <Link to={`/exhibition/${slug}`}>
+            {title}
+            <span className={styles.span}>{span}</span>
+          </Link>
         </h2>
         <p className={styles.text}>{text}</p>
       </div>

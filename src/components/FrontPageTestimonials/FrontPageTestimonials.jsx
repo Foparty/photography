@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './FrontPageTestimonials.module.css';
 import Testimonial from '../Testimonial/Testimonial';
 import { testimonial1, testimonial2, testimonial3 } from '../../../public/img';
+import ButtonEmpty from '../ButtonEmpty/ButtonEmpty';
 
 const FrontPageTestimonials = () => {
   const testimonials = [
@@ -49,13 +50,7 @@ const FrontPageTestimonials = () => {
         <p className={styles.sub}>
           Worked with over <span>50 clients</span> around the world
         </p>
-        <button className={styles.button}>
-          <span>Work With Me</span>
-          <div className={styles.arrowcontainer}>
-            <div className={styles.arrowline}></div>
-            <div className={styles.arrow}></div>
-          </div>
-        </button>
+        <ButtonEmpty text={'Work With Me'} />
       </div>
       <div className={styles.testimonialscontainer}>
         {testimonials.map((item, index) => (

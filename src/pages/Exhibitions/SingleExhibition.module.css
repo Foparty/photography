@@ -1,0 +1,102 @@
+.singleexhibition {
+  padding: 0 0 2rem 0;
+  width: min(100% - 2rem, 92rem);
+  margin-inline: auto;
+}
+
+.exintro {
+  display: flex;
+  flex-direction: column;
+}
+
+.back {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 1rem);
+  font-size: 0.8rem;
+  z-index: 999;
+  padding: 1rem 0;
+}
+
+.date {
+  text-align: center;
+}
+
+.cover {
+  width: min(100% - 2rem, 43.75rem);
+  height: auto;
+  margin-inline: auto;
+}
+.title {
+  max-width: 10ch;
+  line-height: 1;
+  margin-inline: auto;
+  text-align: center;
+  font-size: clamp(4rem, 5vw - 1rem, 9rem);
+  transform: translateY(3.7rem);
+  text-transform: capitalize;
+  color: var(--clr-primary);
+  font-family: var(--ff-light);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.content button {
+  display: inline-block;
+  width: max-content;
+  justify-self: center;
+}
+
+.content h2 {
+  margin-top: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.content p {
+  margin: 1.5rem 0;
+  max-width: 64ch;
+  margin-inline: auto;
+}
+
+.tablerow {
+  max-width: 64ch;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tablerow h3 {
+  color: var(--clr-primary);
+  width: 100%;
+}
+.tablerow p {
+  width: 100%;
+  text-align: right;
+}
+
+@media (min-width: 47.25rem) {
+  .content {
+    max-width: 92rem;
+    margin-inline: auto;
+    grid-template-columns: 30% 70%;
+  }
+  .content button {
+    height: max-content;
+  }
+  .content h2 {
+    text-align: left;
+  }
+  .content p {
+    margin-inline: 0;
+    max-width: 60ch;
+  }
+  .tablerow {
+    max-width: 60ch;
+    margin-inline: 0;
+  }
+}
