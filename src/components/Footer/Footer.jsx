@@ -11,7 +11,12 @@ const Footer = () => {
             Alfonso Martín
           </a>
         </span>
-        <span>Powered by his brain</span>
+        <span>
+          Design by{' '}
+          <a href="https://templates.gola.io" target="_blank" rel="noreferrer">
+            Pawel Gola
+          </a>
+        </span>
       </div>
       <div className={styles.social}>
         <span>
